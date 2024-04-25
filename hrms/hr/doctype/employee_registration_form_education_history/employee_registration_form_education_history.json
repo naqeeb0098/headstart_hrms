@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-10-25 12:35:39.487354",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "level_name",
+  "degree",
+  "year_of_passing",
+  "gradedivision",
+  "name_of_institution",
+  "city__country",
+  "major_subjects"
+ ],
+ "fields": [
+  {
+   "fieldname": "level_name",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Level",
+   "options": "--Select--\nO Level /Matric\nA Level/ Intermediate\nGraduation\nPost-Graduate\nProfessional\nOthers"
+  },
+  {
+   "fieldname": "year_of_passing",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Passing Year"
+  },
+  {
+   "fieldname": "gradedivision",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Grade/Div"
+  },
+  {
+   "fieldname": "city__country",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "City"
+  },
+  {
+   "fieldname": "major_subjects",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Major Subjects"
+  },
+  {
+   "fieldname": "name_of_institution",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Institute"
+  },
+  {
+   "fieldname": "degree",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Degree"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-10-25 16:03:20.263745",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Employee Registration Form Education History",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -26,11 +26,11 @@
   "variable",
   "amended_from",
   "earnings_and_taxation_section",
-  "taxable_earnings_till_date",
   "column_break_20",
   "tax_deducted_till_date",
   "section_break_17",
-  "payroll_cost_centers"
+  "payroll_cost_centers",
+  "taxable_earnings_till_date"
  ],
  "fields": [
   {
@@ -104,6 +104,7 @@
    "label": "Base & Variable"
   },
   {
+   "allow_on_submit": 1,
    "fetch_from": "grade.default_base_pay",
    "fetch_if_empty": 1,
    "fieldname": "base",
@@ -203,13 +204,14 @@
    "allow_on_submit": 1,
    "fieldname": "taxable_earnings_till_date",
    "fieldtype": "Currency",
+   "in_preview": 1,
    "label": "Taxable Earnings Till Date",
    "options": "currency"
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2023-09-12 20:54:02.758373",
+ "modified": "2024-04-20 13:25:49.900469",
  "modified_by": "Administrator",
  "module": "Payroll",
  "name": "Salary Structure Assignment",

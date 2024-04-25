@@ -32,6 +32,14 @@
   {
    "chart": "Y-O-Y Promotions",
    "width": "Half"
+  },
+  {
+   "chart": "Leave Balances",
+   "width": "Half"
+  },
+  {
+   "chart": "Employee Checkin",
+   "width": "Half"
   }
  ],
  "creation": "2022-08-21 12:07:21.614561",
@@ -41,7 +49,7 @@
  "idx": 0,
  "is_default": 0,
  "is_standard": 1,
- "modified": "2022-08-22 11:05:25.627559",
+ "modified": "2024-03-07 13:25:40.248492",
  "modified_by": "Administrator",
  "module": "HR",
  "name": "Employee Lifecycle",

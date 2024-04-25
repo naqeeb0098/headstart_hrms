@@ -1,0 +1,23 @@
+{
+ "color": "#CB2929",
+ "creation": "2024-02-22 14:37:59.817848",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "document_type": "Employee",
+ "dynamic_filters_json": "[[\"Employee\",\"company\",\"=\",\"frappe.defaults.get_user_default(\\\"Company\\\")\"]]",
+ "filters_json": "[[\"Employee\",\"status\",\"=\",\"Active\",false],[\"Employee\",\"default_shift\",\"is\",\"not set\",false]]",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "Shift Missing",
+ "modified": "2024-02-29 18:53:30.375283",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Shift Missing",
+ "owner": "Administrator",
+ "report_function": "Sum",
+ "show_percentage_stats": 0,
+ "stats_time_interval": "Monthly",
+ "type": "Document Type"
+}

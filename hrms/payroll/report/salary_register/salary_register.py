@@ -59,7 +59,13 @@ def execute(filters=None):
 			row.update({frappe.scrub(e): ss_earning_map.get(ss.name, {}).get(e)})
 
 		for d in ded_types:
+			if d == "Provident Fund":(
+				{
+					row.update({"pf_emp_con":ss_ded_map.get(ss.name, {}).get(d)})
+			}
+			)
 			row.update({frappe.scrub(d): ss_ded_map.get(ss.name, {}).get(d)})
+		
 
 		if currency == company_currency:
 			row.update(
@@ -183,6 +189,103 @@ def get_columns(earning_types, ded_types):
 			"fieldtype": "Float",
 			"width": 120,
 		},
+		{
+			"label": _("IESC Payment"),
+			"fieldname": "iesc_payment",
+			"fieldtype": "Data",
+			"width": 120,
+		},
+		{
+			"label": _("EOBI Employer Contribution"),
+			"fieldname": "eobi_emp_con",
+			"fieldtype": "Data",
+			"width": 120,
+		},
+		{
+			"label": _("PF Employer Contribution"),
+			"fieldname": "pf_emp_con",
+			"fieldtype": "Data",
+			"width": 120,
+		},
+		{
+			"label": _("Commission (Admison Related)"),
+			"fieldname": "com_adm_rel",
+			"fieldtype": "Data",
+			"width": 120,
+		},
+		{
+			"label": _("Transport Allowance"),
+			"fieldname": "trans_allowance",
+			"fieldtype": "Data",
+			"width": 120,
+		},
+		{
+			"label": _("Arrears (Addition)"),
+			"fieldname": "arrears",
+			"fieldtype": "Data",
+			"width": 120,
+		},
+		{
+			"label": _("Fuel Reimbursement"),
+			"fieldname": "fuel_reimbursement",
+			"fieldtype": "Data",
+			"width": 120,
+		},
+		{
+			"label": _("Expense Reimbursement"),
+			"fieldname": "exp_reimbursement",
+			"fieldtype": "Data",
+			"width": 120,
+		},
+		{
+			"label": _("Medical Reimbursement"),
+			"fieldname": "med_reimbursement",
+			"fieldtype": "Data",
+			"width": 120,
+		},
+		{
+			"label": _("Loan Disbursement"),
+			"fieldname": "loan_disbursement",
+			"fieldtype": "Data",
+			"width": 120,
+		},
+		{
+			"label": _("Commission (Referral related)"),
+			"fieldname": "com_ref",
+			"fieldtype": "Data",
+			"width": 120,
+		},
+		{
+			"label": _("Income Tax(Reduction)"),
+			"fieldname": "inc_red",
+			"fieldtype": "Data",
+			"width": 120,
+		},
+		{
+			"label": _("Club Payment"),
+			"fieldname": "club_payment",
+			"fieldtype": "Data",
+			"width": 120,
+		},
+		{
+			"label": _("Summer Break Arrears"),
+			"fieldname": "sum_break_arr",
+			"fieldtype": "Data",
+			"width": 120,
+		},
+		{
+			"label": _("Arrears(Deduction)"),
+			"fieldname": "arr_ded",
+			"fieldtype": "Data",
+			"width": 120,
+		},
+		{
+			"label": _("Leave Ded"),
+			"fieldname": "leave_ded",
+			"fieldtype": "Data",
+			"width": 120,
+		},
+		
 	]
 
 	for earning in earning_types:

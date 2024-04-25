@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:title",
  "creation": "2022-08-24 18:37:12.427640",
@@ -27,7 +28,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-17 20:53:40.000452",
+ "modified": "2024-03-27 12:46:25.179758",
  "modified_by": "Administrator",
  "module": "HR",
  "name": "KRA",

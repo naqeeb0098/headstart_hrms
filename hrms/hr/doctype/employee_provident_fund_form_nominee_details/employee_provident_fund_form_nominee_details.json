@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-10-26 12:05:56.503342",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nomniee_name",
+  "phoneno",
+  "relation",
+  "age",
+  "_of__accamulation"
+ ],
+ "fields": [
+  {
+   "fieldname": "nomniee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nomniee Name"
+  },
+  {
+   "fieldname": "phoneno",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PhoneNo"
+  },
+  {
+   "fieldname": "relation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Relation"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Age"
+  },
+  {
+   "fieldname": "_of__accamulation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "% of  Accamulation"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-10-26 12:09:27.551111",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Employee Provident Fund Form NOMINEE details",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
